@@ -103,7 +103,7 @@ ggplot(fatalities_chart[1:top_display_events, ],
 ) + 
   geom_bar(stat = "identity") +
   geom_text(aes(label = fatalities_chart$sum_fatalities), 
-            size = 5, 
+            size = 2, 
             hjust = 0.5, 
             vjust = 1, 
             position = "stack") +
@@ -135,8 +135,8 @@ ggplot(injuries_chart[1:top_display_events, ],
        )
 ) + 
   geom_bar(stat = "identity") + 
-  geom_text(aes(label = fatalities_chart$sum_fatalities), 
-            size = 5, 
+  geom_text(aes(label = injuries_chart$sum_injuries), 
+            size = 2, 
             hjust = 0.5, 
             vjust = 1, 
             position = "stack") +
@@ -231,7 +231,7 @@ ggplot(total_damages[1:top_display_events, ],
 ) + 
   geom_bar(stat = "identity") + 
   geom_text(aes(label = total_damages_sum), 
-            size = 5, 
+            size = 2, 
             hjust = 0.5, 
             vjust = 1, 
             position = "stack") +
